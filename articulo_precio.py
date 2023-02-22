@@ -35,4 +35,4 @@ porcent= "Nuev precio total zapatos: "
 sub_porcent = pre_zapatos - (pre_zapatos * 0.008)
 print(porcent, sub_porcent)
 
-#uno
+#uno dos
