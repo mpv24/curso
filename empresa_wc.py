@@ -16,7 +16,7 @@ else:
 #empresa wc
 
  #valor hora
-empleados = "Cuatro empleados"
+empleados = "Cuatro Empleados"
 valor_hora_A = 20000
 valor_hora_B = 10000
 valor_hora_Otros = 5000
