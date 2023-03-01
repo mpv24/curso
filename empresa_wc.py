@@ -13,35 +13,32 @@ else:
    """
 
 
-#valor hora
-a  = 5000
-b = 10000
-c = 20000
-salario_tope = 1500000
+#empresa wc
 
-print('el valor de la hora de trabajo en el proyecto a')
-print(a)
+ #valor hora
+empleados = "Cuatro empleados"
+valor_hora_A = 20000
+valor_hora_B = 10000
+valor_hora_Otros = 5000
+horas_laborales = 8
 
-print('el valor de la hora de trabajo en el proyecto b')
-print(b)
+sueldo_A = valor_hora_A * horas_laborales * 30 
+sueldo_B = valor_hora_B * horas_laborales * 30 
+sueldo_Otros = valor_hora_Otros * horas_laborales * 30
+horas_Extras = (valor_hora_Otros * 6/100 + valor_hora_Otros) *3
+nuevo_sueldo = sueldo_Otros + horas_Extras
 
-print('el valor de la hora de trabajo en el proyecto c')
-print(c)
+tipo_proyecto = 2
 
-#salario mensual
-salario_1 = (a*8)*30
-print('el salario mensual del proyecto A')
-print(salario_1)
-
-salario_2 = (b*8)*30
-print('el salario mensual del proyecto B')
-print(salario_2)
-
-salario_3 = (c*8)*30
-print('el salario mensual del proyecto C')
-print(salario_3)
-
-if salario_3 > salario_tope:
-    print('Salario es mayor a tope máximo')
+if tipo_proyecto == 1: 
+    print ('Tipo de proyecto A, por tanto el valor de la hora es $20000')
+    print ('El salario mensual da un total de:', sueldo_A)
+    print ('Salario mensual es mayor al tope maximo')
+elif tipo_proyecto == 2:
+    print ('Tipo de proyecto B, por tanto el valor de la hora es $10000')
+    print ('El salario mensual da un total de:', sueldo_B)
+    print ('Salario mensual es mayor al tope maximo')
 else:
-    print('pagarle al empleado por concepto de hora extra el valor de la hora día incrementada en un 6%')
+    print ('Tipo de proyecto diferente A y B, por tanto el valor de la hora es $5000')
+    print ('El salario mensual da un total de:', sueldo_Otros)
+    print ('Nuevo sueldo mensual:', nuevo_sueldo)

@@ -1,0 +1,6 @@
+ingredientes = ["platano", "papa", "souco", "contra muslo", "mazorca", "especias", "maduro", "tomate", "cebolla", "limon y sal", "cilantro", "agua"]
+print(ingredientes)
+
+pago = ""
+Total_pago = 180000
+print(Total_pago)
